@@ -1,0 +1,34 @@
+body{
+    background-color:skyblue
+}
+#header{
+    padding-bottom: 20px;
+    background-color:rgb(176, 219, 236)
+}
+#kotak{
+    padding-bottom: 10px;
+    background-color:rgb(201, 232, 245)
+}
+h1{
+    text-align: center;
+    color:cornflowerblue;
+}
+.foto img{
+    width: 24%;
+}
+.promo{
+    text-align: center;
+}
+ul{
+    text-align: center;
+}
+li{
+    display: inline;
+}
+.gambar{
+    text-align: center;
+}
+.bold{
+    font-size: 50px;
+    color:cornflowerblue;
+}

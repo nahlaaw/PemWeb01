@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .container {
+            display: flex;
+            margin: 50px 350px;
+            width: 500px;
+            height: 300px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+
+    <script>
+        function imagepicker() {
+            const list_image = ["gorila.jpg", "singa.jpg", "elang.jpg"]
+            let pilihan = document.getElementById("option");
+            if(pilihan.value == "Goriila") {
+                let select = list_image[0];
+                document.getElementById("image").src = `images/${select}`
+                alert("Ini Gambar Gorila")
+            }
+
+            if(pilihan.value == "Singa") {
+                let select = list_image[1];
+                document.getElementById("image").src = `images/${select}`
+                alert("Ini Gambar Singa")
+            }
+
+            if(pilihan.value == "Elang") {
+                let select = list_image[2];
+                document.getElementById("image").src = `images/${select}`
+                alert("Ini Gambar Elang")
+            }    
+        }
+    </script>
+</head>
+<body>
+    <select id="option" onchange="imagepicker()">
+        <option value="" selected>Pilih Gambar</option>
+        <option value="Bison">Gorila</option>
+        <option value="Singa">Singa</option>
+        <option value="Kucing">Elang</option>
+    </select>
+    <br>
+    <div class="container" id="container">
+        <div class="box" id="box">
+            <img id="image">
+        </div>
+    </div>
+
+
+</body>
+</html>
